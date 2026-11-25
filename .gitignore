@@ -1,0 +1,85 @@
+# Secrets and Tokens
+*.env
+*.env.*
+client_secrets*.json
+credentials*.json
+*token*.json
+secrets/
+*.pem
+*.key
+
+# Cloned Upstream Repositories (restored via scripts/clone_repos.ps1)
+core/peakcut/
+skills/video-editing-skills/
+
+# Data, Media, and Recordings
+recordings/*
+!recordings/.gitkeep
+rolling-buffer/*
+!rolling-buffer/.gitkeep
+analysis/*
+!analysis/.gitkeep
+highlights/*
+!highlights/.gitkeep
+clips/*
+!clips/.gitkeep
+previews/*
+!previews/.gitkeep
+renders/*
+!renders/.gitkeep
+uploads/*
+!uploads/.gitkeep
+creators/*
+!creators/.gitkeep
+reference-library/*
+!reference-library/.gitkeep
+
+# Database, Runtime Config & Logs
+database/*.db
+database/*.db-*
+database/*.sqlite
+database/*.sqlite3
+config/quota_tracker.json
+logs/*.log
+logs/*.txt
+reports/*.json
+reports/*.html
+reports/*.md
+
+# Models & External Tools
+models/*
+!models/.gitkeep
+tools/*
+!tools/.gitkeep
+
+# Media & Large Binaries (safety net)
+*.mp4
+*.mkv
+*.webm
+*.mov
+*.avi
+*.wav
+*.mp3
+*.exe
+*.dll
+*.zip
+*.7z
+*.pt
+*.pth
+*.onnx
+*.bin
+
+# Python, Node & OS cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+venv/
+.venv/
+env/
+node_modules/
+dist/
+build/
+*.egg-info/
+.DS_Store
+Thumbs.db
